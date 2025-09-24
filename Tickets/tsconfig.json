@@ -1,0 +1,30 @@
+{
+  "tschannel": "1337502799172468736",
+  "categories": [
+    {
+      "id": "support",
+      "label": "Soporte",
+      "emoji": "🛠️",
+      "description": "Problemas técnicos",
+      "channelName": "ticket-soporte",
+      "categoryId": "987654321098765432"
+    },
+    {
+      "id": "report",
+      "label": "Reportar",
+      "emoji": "🚨",
+      "description": "Reportar usuarios o bugs",
+      "channelName": "ticket-reporte",
+      "categoryId": "987654321098765432"
+    },
+    {
+      "id": "other",
+      "label": "Otros",
+      "emoji": "📩",
+      "description": "Consultas generales",
+      "channelName": "ticket-general",
+      "categoryId": "987654321098765432"
+    }
+  ]
+}
+

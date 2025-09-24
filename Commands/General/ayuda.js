@@ -9,14 +9,16 @@ const {
 } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
-const config = require("../../config.json");
+const config = require("../../config/config.json");
 
 // Opcional: emojis por categoría
 const categoryEmojis = {
   Moderation: "🛡️",
   Fun: "🛠️",
   General: "👤",
-  Devs: "💻"
+  Devs: "💻",
+  Fun: "🤩",
+  Utilidades: "✅"
 };
 
 module.exports = {
@@ -54,7 +56,7 @@ module.exports = {
 
     // === Menú principal ===
     const menuOptions = [
-      { label: "🏠 Inicio", value: "inicio", emoji: "🏠" },
+      { label: "Inicio", value: "inicio", emoji: "🏠" },
       ...Object.keys(categories).map(cat => {
         return {
           label: cat.charAt(0).toUpperCase() + cat.slice(1),
@@ -62,7 +64,7 @@ module.exports = {
           emoji: categoryEmojis[cat] || undefined
         };
       }),
-      { label: "ℹ️ Información", value: "info", emoji: "ℹ️" }
+      { label: "Información", value: "info", emoji: "ℹ️" }
     ];
 
     const dropdown = new StringSelectMenuBuilder()
@@ -202,3 +204,4 @@ module.exports = {
     });
   }
 };
+

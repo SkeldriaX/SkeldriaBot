@@ -21,7 +21,7 @@ function generarWarnId() {
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("warn")
-    .setDescription("⚠️ Sistema de advertencias")
+    .setDescription("⚠️ Advertencias")
     .addSubcommand(sub =>
       sub
         .setName("user")
@@ -407,3 +407,4 @@ module.exports = {
     }
   }
 };
+

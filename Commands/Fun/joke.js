@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
-const jokes = require("../../jokes.json");
+const jokes = require("../../config/jokes.json");
 
 // Crear comando dinámicamente en base a las categorías del jokes.json
 const data = new SlashCommandBuilder()

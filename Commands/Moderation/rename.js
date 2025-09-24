@@ -4,7 +4,7 @@ const {
   PermissionsBitField, 
   ChannelType 
 } = require("discord.js");
-const emoji = require("../../emojis.json");
+const emoji = require("../../config/emojis.json");
 
 module.exports = {
   data: new SlashCommandBuilder()

@@ -3,8 +3,8 @@ const {
   EmbedBuilder, 
   ActivityType 
 } = require("discord.js");
-const emoji = require("../../emojis.json");
-const { developers } = require("../../config.json");
+const emoji = require("../../config/emojis.json");
+const { developers } = require("../../config/config.json");
 
 module.exports = {
   data: new SlashCommandBuilder()

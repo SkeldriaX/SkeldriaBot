@@ -1,6 +1,6 @@
 // Commands/Utils/role.js
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require("discord.js");
-const emoji = require(`${process.cwd()}/emojis.json`);
+const emoji = require('../../config/emojis.json');
 
 module.exports = {
   data: new SlashCommandBuilder()

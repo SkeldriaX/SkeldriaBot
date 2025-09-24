@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
-const gifs = require("../../nsfw.json");
+const gifs = require("../../config/nsfw.json");
 
 const data = new SlashCommandBuilder()
   .setName("nsfw")

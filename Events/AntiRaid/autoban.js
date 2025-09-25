@@ -1,6 +1,6 @@
 const { Events, EmbedBuilder } = require("discord.js");
-const emoji = require("../../emojis.json");
-const config = require("../../config.json");
+const emoji = require("../../config/emojis.json");
+const config = require("../../config/config.json");
 
 // Configuración
 const TIME_WINDOW_MS = 5000;
@@ -37,7 +37,7 @@ async function handleRaid(client, guild, type, count) {
         const owner = await guild.fetchOwner().catch(() => null);
         if (owner) {
             await owner.send({
-                content: `⚠️ El bot detectó un raid en tu servidor **${guild.name}**.`,
+                content: `⚠️ El bot ha sido atacado y tu servidor **${guild.name}** se vio afectadp.\nLamentamos el inconveniente, pero de momento el bot ya ha abandonado el servidor.`,
                 embeds: [embed]
             }).catch(() => {
                 console.warn(`[AntiRaid] No se pudo enviar DM al owner de ${guild.name}`);

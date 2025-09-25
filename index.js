@@ -8,8 +8,8 @@ const {
 
 const fs = require("fs");
 const path = require("path");
-const config = require("./JSON/config.json");
-const emoji = require("./JSON/emojis.json");
+const config = require("./config/config.json");
+const emoji = require("./config/emojis.json");
 const tsconfig = require("./Tickets/tsconfig.json");
 require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 

@@ -1,4 +1,4 @@
-const config = require("../../config.json");
+const config = require("../../config/config.json");
 require("colors");
 const { ActivityType } = require("discord.js");
 
@@ -12,10 +12,10 @@ module.exports = {
 
         // ====================== CONFIG DE ESTADOS ======================
         const statuses = [
-            { type: "playing", text: "AstrionMC | play.astrionmc.fun" },
+            { type: "playing", text: "SkeldriaX | skeldriabot.fvckyqnx.me" },
             { type: "listening", text: "tus sugerencias 💡" },
             { type: "watching", text: "la seguridad del servidor 🔒" },
-            { type: "competing", text: "en el top de AstrionMC 🏆" },
+            { type: "competing", text: "en el top de SkeldriaX 🏆" },
             { type: "watching", dynamic: () => `👥 ${client.users.cache.size} usuarios` },
             { type: "watching", dynamic: () => `🌐 ${client.guilds.cache.size} servidores` },
         ];

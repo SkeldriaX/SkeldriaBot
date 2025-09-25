@@ -11,7 +11,6 @@ const fs = require("fs");
 const path = require("path");
 const config = require("../../config/config.json");
 
-// Opcional: emojis por categoría
 const categoryEmojis = {
   Moderation: "🛡️",
   Fun: "🛠️",
@@ -204,4 +203,5 @@ module.exports = {
     });
   }
 };
+
 

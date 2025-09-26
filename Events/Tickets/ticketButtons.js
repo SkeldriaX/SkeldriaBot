@@ -17,8 +17,9 @@ module.exports = {
     }
 
     try {
+      const channelName = `${categoryConfig.channelName}-${interaction.user.username}`;
       const channel = await interaction.guild.channels.create({
-        name: categoryConfig.channelName || `ticket-${interaction.user.username}`,
+        name: channelName,
         type: 0, // Canal de texto
         parent: categoryConfig.categoryId || null,
         permissionOverwrites: [

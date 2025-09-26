@@ -6,7 +6,10 @@ module.exports = {
     .setDescription("Cerrar este ticket manualmente"),
 
   async execute(interaction, client) {
-    if (!interaction.channel.name.startsWith("ticket-")) {
+    // Leer los channelName válidos desde tsconfig.json
+    const config = require("../../Tickets/tsconfig.json");
+    const validNames = config.categories.map(c => c.channelName);
+    if (!validNames.includes(interaction.channel.name)) {
       return interaction.reply({ content: "❌ Este canal no es un ticket.", ephemeral: true });
     }
     const url = await client.generateTranscript(interaction.channel);
